@@ -36,7 +36,7 @@ const optionInputs = document.querySelectorAll('.options');
 
 
 const loadQuestion = () => {
-    if(index ===total){
+    if (index === total) {
         return endQuiz();
     }
     reset();
@@ -72,8 +72,8 @@ const getAnswer = () => {
         (input) => {
 
             if (input.checked) {
-                answer=  input.value;
-    
+                answer = input.value;
+
             }
 
         }
@@ -82,7 +82,7 @@ const getAnswer = () => {
 }
 
 
-const reset = () =>{
+const reset = () => {
     optionInputs.forEach(
         (input) => {
             input.checked = false;
@@ -91,8 +91,8 @@ const reset = () =>{
 }
 
 
-const endQuiz =() =>{
-    document.getElementById("box").innerHTML  = `
+const endQuiz = () => {
+    document.getElementById("box").innerHTML = `
     <h3>Thankyou for playing the Quiz.</h3>
     <h2>${right} / ${total} are correct.</h2>
     `

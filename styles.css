@@ -24,6 +24,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     color: white;
+    /* text-align: center; */
 }
 .row{
     margin: 2rem 0;
